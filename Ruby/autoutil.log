@@ -1,0 +1,333 @@
+
+
+2018/04/17 10:48:40 autoutil(17f0) I: ****************************************
+2018/04/17 10:48:40 autoutil(17f0) I:    Application Start:
+2018/04/17 10:48:40 autoutil(17f0) I:    (c:\boot\altiris\iso\autoutil.exe)
+2018/04/17 10:48:40 autoutil(17f0) I: ****************************************
+2018/04/17 10:48:40 autoutil(17f0) I:     Module:       'c:\boot\altiris\iso\autoutil.exe'
+2018/04/17 10:48:40 autoutil(17f0) I:     Command line: 'c:\boot\altiris\iso\autoutil.exe -q'
+2018/04/17 10:48:40 autoutil(17f0) I:     Using startup parameters from ini file:
+2018/04/17 10:48:40 autoutil(17f0) I:       'c:\boot\altiris\iso\autoutil.ini' - [LogFile]: Severity=d, Screen=false, Append=an, TimeStamps=C, ProcessIDs=mp, File='H:\autoutil.log'
+
+2018/04/17 10:48:40 autoutil(17f0) I: AutoUtil application version and architecture is '1.1.9837.20-x86'
+2018/04/17 10:48:40 autoutil(17f0) I: ParseCmdLine (sCmdLine='-q')
+2018/04/17 10:48:40 autoutil(17f0) D:     sCmdLine='-q'
+2018/04/17 10:48:40 autoutil(17f0) D:     sInstallTo=''
+2018/04/17 10:48:40 autoutil(17f0) D:     sCopyFrom=''
+2018/04/17 10:48:40 autoutil(17f0) D:     sCopyTo=''
+2018/04/17 10:48:40 autoutil(17f0) D:     sBootDevice=''
+2018/04/17 10:48:40 autoutil(17f0) D:     sSection=''
+2018/04/17 10:48:40 autoutil(17f0) D:     sKey=''
+2018/04/17 10:48:40 autoutil(17f0) D:     sVal=''
+2018/04/17 10:48:40 autoutil(17f0) D:     sIni=''
+2018/04/17 10:48:40 autoutil(17f0) D:     bGet=0
+2018/04/17 10:48:40 autoutil(17f0) D:     bSet=0
+2018/04/17 10:48:40 autoutil(17f0) D:     bSetAuto=0
+2018/04/17 10:48:40 autoutil(17f0) D:     bSetProd=0
+2018/04/17 10:48:40 autoutil(17f0) D:     bReg=0
+2018/04/17 10:48:40 autoutil(17f0) D:     bUnreg=0
+2018/04/17 10:48:40 autoutil(17f0) D:     bVerbose=0
+2018/04/17 10:48:40 autoutil(17f0) D:     bCopy=0
+2018/04/17 10:48:40 autoutil(17f0) D:     bQueryStatus=1
+2018/04/17 10:48:40 autoutil(17f0) D:     bBootDevice=0
+2018/04/17 10:48:40 autoutil(17f0) D:     bIgnore=0
+2018/04/17 10:48:40 autoutil(17f0) I: CClient::Create (sAppPath='c:\boot\altiris\iso', sInstallPath='', bSilent=0, bVerbose=0, bBootDevice=0)
+2018/04/17 10:48:40 autoutil(17f0) I:   Begin CClient::GetOSVer ()
+2018/04/17 10:48:40 autoutil(17f0) I:     Client OS version from GetVersionEx is 'WinNT-6.1.7601:Service Pack 1-x86' (6.1)
+2018/04/17 10:48:40 autoutil(17f0) I:     Client OS version from Registry is 'WinNT-6.1.7601:Service Pack 1-x86' (6.1)
+2018/04/17 10:48:40 autoutil(17f0) I:     Client OS version from Kernel (C:\Windows\system32\kernel32.dll) is 'WinNT-6.1.7601.24000-x86' (6.1)
+2018/04/17 10:48:40 autoutil(17f0) I:   End GetOSVer - Using client OS of 6.1
+2018/04/17 10:48:40 autoutil(17f0) I:   Client OS type is NT
+2018/04/17 10:48:40 autoutil(17f0) I:   Client OS is Vista, 2008, Win7, 2008 R2, Win8 or 2012, etc (6.*)
+2018/04/17 10:48:40 autoutil(17f0) I:     Client OS is Win7 or 2008 R2 (6.1) - use Win7 class
+2018/04/17 10:48:40 autoutil(17f0) I: CClient::CClient (bUseNativeBcdEdit=0, sBaseSection='BOOTMGR', sClientSection='WIN7', sVerb='open', sAppPath='c:\boot\altiris\iso', sInstallPath='', bSilent=0, bVerbose=0, bBootDevice=0)
+2018/04/17 10:48:40 autoutil(17f0) D:   Begin GetProdBootDrive (bInAutomation=0)
+2018/04/17 10:48:40 autoutil(17f0) D:   End GetProdBootDrive - returning 'C:'
+2018/04/17 10:48:40 autoutil(17f0) I:   Begin bcd::UsesNativeBootMgr (bVerbose=false, pWnd=00000000, sBcdEditPath='')
+2018/04/17 10:48:40 autoutil(17f0) I: - - bRedirectDisabled = 0
+2018/04/17 10:48:41 autoutil(17f0) D:           RunShellExecute - ShellExecuteEx (sFile='bcdedit.exe', sParam='/enum all') succeeded with exitcode 0, returning true
+2018/04/17 10:48:41 autoutil(17f0) D:   -UsesNativeBootMgr - RunCommand returned true, exitcode=0
+2018/04/17 10:48:41 autoutil(17f0) I:   End bcd::UsesNativeBootMgr - returning true
+2018/04/17 10:48:41 autoutil(17f0) I:   Determine bcdedit path...
+2018/04/17 10:48:41 autoutil(17f0) D:     don't use native path - use installer path of 'C:\boot\altiris\iso\bcdedit.exe'
+2018/04/17 10:48:41 autoutil(17f0) I:   Determine bcd path...
+2018/04/17 10:48:41 autoutil(17f0) D:     bootmgr detected - use empty bcd path instead of 'C:\boot\bcd'
+2018/04/17 10:48:41 autoutil(17f0) D:     explicitly use 'C:' as the automation folder boot device instead of 'boot'
+2018/04/17 10:48:41 autoutil(17f0) I:  CClient::IniReadVariables (sFile='c:\boot\altiris\iso\autoinst.ini', sSection='BOOTMGR_VARIABLES')
+2018/04/17 10:48:41 autoutil(17f0) I:  CClient::IniReadVariables (sFile='c:\boot\altiris\iso\autoinst.ini', sSection='VARIABLES')
+2018/04/17 10:48:41 autoutil(17f0) D:     %MASTER_GUID% = '{e217309d-dead-beef-a315-001372be0d01}'
+2018/04/17 10:48:41 autoutil(17f0) D:     %MASTER_GUID2% = '{e217309d-dead-beef-a315-001372be0d02}'
+2018/04/17 10:48:41 autoutil(17f0) D:     %DESCRIPTION_AUTOMATION% = 'Symantec Deployment Solution Preboot Environment'
+2018/04/17 10:48:41 autoutil(17f0) D:     %DESCRIPTION_PRODUCTION% = 'Windows Production Operating System'
+2018/04/17 10:48:41 autoutil(17f0) D:     %DESCRIPTION_BOOTMGR% = 'Windows Boot Manager'
+2018/04/17 10:48:41 autoutil(17f0) D:     %FORCE% = ''
+2018/04/17 10:48:41 autoutil(17f0) D:     %MBR% = ''
+2018/04/17 10:48:41 autoutil(17f0) I:  CClient::IniReadVariables (sFile='c:\boot\altiris\iso\autoinst.ini', sSection='IF_CMDS')
+2018/04/17 10:48:41 autoutil(17f0) D:     %IF_BOOTDIR% = '@CMD.EXE|/D /C DIR /b "%INSTALL_PATH%"'
+2018/04/17 10:48:41 autoutil(17f0) D:     %IF_BCDSTORE% = '@CMD.EXE|/D /C DIR /b "%BCD_PATH%"'
+2018/04/17 10:48:41 autoutil(17f0) D:     %IF_ANY% = 'ANY'
+2018/04/17 10:48:41 autoutil(17f0) D:     %IF_BOOTMGR% = 'BOOTMGR'
+2018/04/17 10:48:41 autoutil(17f0) D:     %IF_OSLOADER% = 'OSLOADER'
+2018/04/17 10:48:41 autoutil(17f0) D:     %IF_NTLDR% = 'NTLDR'
+2018/04/17 10:48:41 autoutil(17f0) D:     %IF_PREBOOTLDR% = 'PREBOOTLDR'
+2018/04/17 10:48:41 autoutil(17f0) D:     %IF_PREBOOTOPT% = 'PREBOOTOPT'
+2018/04/17 10:48:41 autoutil(17f0) D:     %IF_TIMEOUT% = 'TIMEOUT'
+2018/04/17 10:48:41 autoutil(17f0) D:     %IF_BCDEDIT% = '@CMD.EXE|/D /C DIR /b "%INSTALL_PATH%\bcdedit.exe"'
+2018/04/17 10:48:41 autoutil(17f0) D:   Tokens:
+2018/04/17 10:48:41 autoutil(17f0) D:     %BCDEDIT_PATH% = 'C:\boot\altiris\iso\bcdedit.exe'
+2018/04/17 10:48:41 autoutil(17f0) D:     %BCD_PATH% = ''
+2018/04/17 10:48:41 autoutil(17f0) D:     %BCD_OPT% = ''
+2018/04/17 10:48:41 autoutil(17f0) D:     %INSTALL_PATH% = 'C:\boot\altiris\iso'
+2018/04/17 10:48:41 autoutil(17f0) D:     %INSTALL_PATH_NO_DRIVE% = 'boot\altiris\iso'
+2018/04/17 10:48:41 autoutil(17f0) D:     %PROD_DRIVE% = 'C:'
+2018/04/17 10:48:41 autoutil(17f0) D:     %BOOT_FOLDER_PATH% = 'C:\boot'
+2018/04/17 10:48:41 autoutil(17f0) D:     %MASTER_GUID% = '{e217309d-dead-beef-a315-001372be0d01}'
+2018/04/17 10:48:41 autoutil(17f0) D:     %MASTER_GUID2% = '{e217309d-dead-beef-a315-001372be0d02}'
+2018/04/17 10:48:41 autoutil(17f0) D:     %DESCRIPTION_AUTOMATION% = 'Symantec Deployment Solution Preboot Environment'
+2018/04/17 10:48:41 autoutil(17f0) D:     %DESCRIPTION_PRODUCTION% = 'Windows Production Operating System'
+2018/04/17 10:48:41 autoutil(17f0) D:     %{inject}% = 'C:\boot\altiris\iso\@inject@'
+2018/04/17 10:48:41 autoutil(17f0) D:     %{dot}% = 'C:\boot\altiris\iso'
+2018/04/17 10:48:41 autoutil(17f0) D:     %{iso}% = 'C:\boot\altiris\iso'
+2018/04/17 10:48:41 autoutil(17f0) D:     %%SRC%% = 'c:\boot\altiris\iso'
+2018/04/17 10:48:41 autoutil(17f0) D:     %%DST%% = 'C:\boot\altiris\iso'
+2018/04/17 10:48:41 autoutil(17f0) I:   Member variables:
+2018/04/17 10:48:41 autoutil(17f0) I:     m_bIsAutomation     =false
+2018/04/17 10:48:41 autoutil(17f0) I:     m_bUsesNativeBootMgr=true
+2018/04/17 10:48:41 autoutil(17f0) I:     m_bUseNativeBcdEdit =false
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sVerb             ='open'
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sAppPath          ='c:\boot\altiris\iso'
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sIniPath          ='c:\boot\altiris\iso\autoinst.ini'
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sProdBootDrive    ='C:'
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sInstallPath      ='C:\boot\altiris\iso'
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sBcdEditPath      ='C:\boot\altiris\iso\bcdedit.exe'
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sBootFolderPath   ='C:\boot'
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sBcdPath          ='' (not found)
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sDotFolderPath    ='C:\boot\altiris\iso'
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sInjectFolderPath ='C:\boot\altiris\iso\@inject@' (not found)
+2018/04/17 10:48:41 autoutil(17f0) I:     m_bSilent           =false
+2018/04/17 10:48:41 autoutil(17f0) I:     m_bVerbose          =false
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sMasterGuid       ='{e217309d-dead-beef-a315-001372be0d01}'
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sMasterGuid2      ='{e217309d-dead-beef-a315-001372be0d02}'
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sBaseSection      ='BOOTMGR'
+2018/04/17 10:48:41 autoutil(17f0) I:     m_sClientSection    ='BOOTMGR'
+2018/04/17 10:48:41 autoutil(17f0) I: CClientBootMgr::CClientBootMgr (sClientSection='WIN7', sVerb='open', sAppPath='c:\boot\altiris\iso', sInstallPath='', bSilent=0, bVerbose=0, bBootDevice=0)
+2018/04/17 10:48:41 autoutil(17f0) I: CClientWin7::CClientWin7 (sVerb='open', sAppPath='c:\boot\altiris\iso', sInstallPath='', bSilent=0, bVerbose=0, bBootDevice=0)
+
+2018/04/17 10:48:41 autoutil(17f0) I: ----- Start Query operation -----
+
+2018/04/17 10:48:41 autoutil(17f0) I: Begin CClient::IsInstalled (bForce=0)
+2018/04/17 10:48:41 autoutil(17f0) I:  bcd::GetOsLoaderIdentifier (sGuid='{e217309d-dead-beef-a315-001372be0d01}', sDescription='')
+2018/04/17 10:48:41 autoutil(17f0) I:    Begin bcd::GetOsLoaderObjects (v, sId='')
+2018/04/17 10:48:41 autoutil(17f0) D:           CreateChildProcess - CreateProcess (sFile='C:\boot\altiris\iso\bcdedit.exe', sParam=' /enum osloader /v') succeeded with exitcode 0, returning true
+2018/04/17 10:48:41 autoutil(17f0) D:         RunCommandRedirectToBuffer output:
+
+Windows Boot Loader
+-------------------
+identifier              {89bc9aa2-fff5-11e6-a910-89b898ff3525}
+device                  partition=C:
+path                    \Windows\system32\winload.exe
+description             Windows 7
+locale                  ja-JP
+inherit                 {6efb52bf-1766-41db-a6b3-0ee5eff72bd7}
+recoverysequence        {89bc9aa3-fff5-11e6-a910-89b898ff3525}
+recoveryenabled         Yes
+osdevice                partition=C:
+systemroot              \Windows
+resumeobject            {89bc9aa1-fff5-11e6-a910-89b898ff3525}
+nx                      OptIn
+bootstatuspolicy        IgnoreAllFailures
+
+Windows Boot Loader
+-------------------
+identifier              {89bc9aa3-fff5-11e6-a910-89b898ff3525}
+device                  ramdisk=[C:]\Recovery\89bc9aa3-fff5-11e6-a910-89b898ff3525\Winre.wim,{89bc9aa4-fff5-11e6-a910-89b898ff3525}
+path                    \windows\system32\winload.exe
+description             Windows Recovery Environment
+inherit                 {6efb52bf-1766-41db-a6b3-0ee5eff72bd7}
+osdevice                ramdisk=[C:]\Recovery\89bc9aa3-fff5-11e6-a910-89b898ff3525\Winre.wim,{89bc9aa4-fff5-11e6-a910-89b898ff3525}
+systemroot              \windows
+nx                      OptIn
+winpe                   Yes
+custom:46000010         Yes
+
+Windows Boot Loader
+-------------------
+identifier              {e217309d-dead-beef-a315-001372be0d01}
+device                  ramdisk=[C:]\boot\altiris\iso\sources\boot.wim,{e217309d-dead-beef-a315-001372be0d02}
+path                    \windows\system32\boot\winload.exe
+description             Symantec Deployment Solution Preboot Environment
+osdevice                ramdisk=[C:]\boot\altiris\iso\sources\boot.wim,{e217309d-dead-beef-a315-001372be0d02}
+systemroot              \windows
+detecthal               Yes
+winpe                   Yes
+quietboot               Yes
+bootlog                 Yes
+
+
+2018/04/17 10:48:41 autoutil(17f0) D:         RunCommandRedirectToBuffer - CreateChildProcess (sFile='C:\boot\altiris\iso\bcdedit.exe', sParam=' /enum osloader /v') succeeded with exitcode=0, returning TRUE
+2018/04/17 10:48:41 autoutil(17f0) I:  -GetOsLoaderObjects - Windows boot loader[1]:
+2018/04/17 10:48:41 autoutil(17f0) I:     identifier     ='{89bc9aa2-fff5-11e6-a910-89b898ff3525}'
+2018/04/17 10:48:41 autoutil(17f0) I:     description    ='windows 7'
+2018/04/17 10:48:41 autoutil(17f0) I:     device         ='partition=c:'
+2018/04/17 10:48:41 autoutil(17f0) I:     path           ='\windows\system32\winload.exe'
+2018/04/17 10:48:41 autoutil(17f0) I:     locale         ='ja-jp'
+2018/04/17 10:48:41 autoutil(17f0) I:     inherit        ='{6efb52bf-1766-41db-a6b3-0ee5eff72bd7}'
+2018/04/17 10:48:41 autoutil(17f0) I:     loadoptions    =''
+2018/04/17 10:48:41 autoutil(17f0) I:     osdevice       ='partition=c:'
+2018/04/17 10:48:41 autoutil(17f0) I:     systemroot     ='\windows'
+2018/04/17 10:48:41 autoutil(17f0) I:     resumeobject   ='{89bc9aa1-fff5-11e6-a910-89b898ff3525}'
+2018/04/17 10:48:41 autoutil(17f0) I:     nx             ='optin'
+2018/04/17 10:48:41 autoutil(17f0) I:     detecthal      =''
+2018/04/17 10:48:41 autoutil(17f0) I:     winpe          =''
+2018/04/17 10:48:41 autoutil(17f0) I:     quietboot      =''
+2018/04/17 10:48:41 autoutil(17f0) I:     bootlog        =''
+2018/04/17 10:48:41 autoutil(17f0) I:     ems            =''
+2018/04/17 10:48:41 autoutil(17f0) I:     sos            =''
+2018/04/17 10:48:41 autoutil(17f0) I:     optionsedit    =''
+2018/04/17 10:48:41 autoutil(17f0) I:     advancedoptions=''
+2018/04/17 10:48:41 autoutil(17f0) I:  -GetOsLoaderObjects - Windows boot loader[2]:
+2018/04/17 10:48:41 autoutil(17f0) I:     identifier     ='{89bc9aa3-fff5-11e6-a910-89b898ff3525}'
+2018/04/17 10:48:41 autoutil(17f0) I:     description    ='windows recovery environment'
+2018/04/17 10:48:41 autoutil(17f0) I:     device         ='ramdisk=[c:]\recovery\89bc9aa3-fff5-11e6-a910-89b898ff3525\winre.wim,{89bc9aa4-fff5-11e6-a910-89b898ff3525}'
+2018/04/17 10:48:41 autoutil(17f0) I:     path           ='\windows\system32\winload.exe'
+2018/04/17 10:48:41 autoutil(17f0) I:     locale         =''
+2018/04/17 10:48:41 autoutil(17f0) I:     inherit        ='{6efb52bf-1766-41db-a6b3-0ee5eff72bd7}'
+2018/04/17 10:48:41 autoutil(17f0) I:     loadoptions    =''
+2018/04/17 10:48:41 autoutil(17f0) I:     osdevice       ='ramdisk=[c:]\recovery\89bc9aa3-fff5-11e6-a910-89b898ff3525\winre.wim,{89bc9aa4-fff5-11e6-a910-89b898ff3525}'
+2018/04/17 10:48:41 autoutil(17f0) I:     systemroot     ='\windows'
+2018/04/17 10:48:41 autoutil(17f0) I:     resumeobject   =''
+2018/04/17 10:48:41 autoutil(17f0) I:     nx             ='optin'
+2018/04/17 10:48:41 autoutil(17f0) I:     detecthal      =''
+2018/04/17 10:48:41 autoutil(17f0) I:     winpe          ='yes'
+2018/04/17 10:48:41 autoutil(17f0) I:     quietboot      =''
+2018/04/17 10:48:41 autoutil(17f0) I:     bootlog        =''
+2018/04/17 10:48:41 autoutil(17f0) I:     ems            =''
+2018/04/17 10:48:41 autoutil(17f0) I:     sos            =''
+2018/04/17 10:48:41 autoutil(17f0) I:     optionsedit    =''
+2018/04/17 10:48:41 autoutil(17f0) I:     advancedoptions=''
+2018/04/17 10:48:41 autoutil(17f0) I:  -GetOsLoaderObjects - Windows boot loader[3]:
+2018/04/17 10:48:41 autoutil(17f0) I:     identifier     ='{e217309d-dead-beef-a315-001372be0d01}'
+2018/04/17 10:48:41 autoutil(17f0) I:     description    ='symantec deployment solution preboot environment'
+2018/04/17 10:48:41 autoutil(17f0) I:     device         ='ramdisk=[c:]\boot\altiris\iso\sources\boot.wim,{e217309d-dead-beef-a315-001372be0d02}'
+2018/04/17 10:48:41 autoutil(17f0) I:     path           ='\windows\system32\boot\winload.exe'
+2018/04/17 10:48:41 autoutil(17f0) I:     locale         =''
+2018/04/17 10:48:41 autoutil(17f0) I:     inherit        =''
+2018/04/17 10:48:41 autoutil(17f0) I:     loadoptions    =''
+2018/04/17 10:48:41 autoutil(17f0) I:     osdevice       ='ramdisk=[c:]\boot\altiris\iso\sources\boot.wim,{e217309d-dead-beef-a315-001372be0d02}'
+2018/04/17 10:48:41 autoutil(17f0) I:     systemroot     ='\windows'
+2018/04/17 10:48:41 autoutil(17f0) I:     resumeobject   =''
+2018/04/17 10:48:41 autoutil(17f0) I:     nx             =''
+2018/04/17 10:48:41 autoutil(17f0) I:     detecthal      ='yes'
+2018/04/17 10:48:41 autoutil(17f0) I:     winpe          ='yes'
+2018/04/17 10:48:41 autoutil(17f0) I:     quietboot      ='yes'
+2018/04/17 10:48:41 autoutil(17f0) I:     bootlog        ='yes'
+2018/04/17 10:48:41 autoutil(17f0) I:     ems            =''
+2018/04/17 10:48:41 autoutil(17f0) I:     sos            =''
+2018/04/17 10:48:41 autoutil(17f0) I:     optionsedit    =''
+2018/04/17 10:48:41 autoutil(17f0) I:     advancedoptions=''
+2018/04/17 10:48:41 autoutil(17f0) I:    End bcd::GetOsLoaderObjects found 3 objects
+2018/04/17 10:48:41 autoutil(17f0) I:  Begin bcd::GetOsLoaderIdentifier (v[3], sGuid='{e217309d-dead-beef-a315-001372be0d01}', sDescription='')
+2018/04/17 10:48:41 autoutil(17f0) I:  -GetOsLoaderIdentifier - return value from bcdObject::Find ('{e217309d-dead-beef-a315-001372be0d01}', '{e217309d-dead-beef-a315-001372be0d01}') = 0
+2018/04/17 10:48:41 autoutil(17f0) I:  End bcd::GetOsLoaderIdentifier - returning guid '{e217309d-dead-beef-a315-001372be0d01}' associated with identifier guid '{e217309d-dead-beef-a315-001372be0d01}'
+2018/04/17 10:48:41 autoutil(17f0) I: End CClient::IsInstalled - returning true
+2018/04/17 10:48:41 autoutil(17f0) I: Begin CClient::IsNextBootAuto () called
+2018/04/17 10:48:41 autoutil(17f0) I: Begin CClient::IsInstalled (bForce=0)
+2018/04/17 10:48:41 autoutil(17f0) I: End CClient::IsInstalled - returning true
+2018/04/17 10:48:41 autoutil(17f0) I:  Begin bcd::GetBootManagerObject (item)
+2018/04/17 10:48:41 autoutil(17f0) I:    Begin bcd::GetBootManagerObjects (v)
+2018/04/17 10:48:41 autoutil(17f0) D:           CreateChildProcess - CreateProcess (sFile='C:\boot\altiris\iso\bcdedit.exe', sParam=' /enum {bootmgr} /v') succeeded with exitcode 0, returning true
+2018/04/17 10:48:41 autoutil(17f0) D:         RunCommandRedirectToBuffer output:
+
+Windows Boot Manager
+--------------------
+identifier              {9dea862c-5cdd-4e70-acc1-f32b344d4795}
+device                  partition=\Device\HarddiskVolume1
+description             Windows Boot Manager
+locale                  ja-JP
+inherit                 {7ea2e1ac-2e61-4728-aaa3-896d9d0a9f0e}
+default                 {89bc9aa2-fff5-11e6-a910-89b898ff3525}
+resumeobject            {89bc9aa1-fff5-11e6-a910-89b898ff3525}
+displayorder            {89bc9aa2-fff5-11e6-a910-89b898ff3525}
+                        {e217309d-dead-beef-a315-001372be0d01}
+toolsdisplayorder       {b2721d73-1db4-4c62-bf78-c548a880142d}
+timeout                 0
+
+
+2018/04/17 10:48:41 autoutil(17f0) D:         RunCommandRedirectToBuffer - CreateChildProcess (sFile='C:\boot\altiris\iso\bcdedit.exe', sParam=' /enum {bootmgr} /v') succeeded with exitcode=0, returning TRUE
+2018/04/17 10:48:41 autoutil(17f0) I:  -GetBootManagerObjects - Windows boot manager[1]:
+2018/04/17 10:48:41 autoutil(17f0) I:     identifier           ='{9dea862c-5cdd-4e70-acc1-f32b344d4795}'
+2018/04/17 10:48:41 autoutil(17f0) I:     description          ='windows boot manager'
+2018/04/17 10:48:41 autoutil(17f0) I:     device               ='partition=\\harddiskvolume1'
+2018/04/17 10:48:41 autoutil(17f0) I:     path                 =''
+2018/04/17 10:48:41 autoutil(17f0) I:     locale               ='ja-jp'
+2018/04/17 10:48:41 autoutil(17f0) I:     inherit              ='{7ea2e1ac-2e61-4728-aaa3-896d9d0a9f0e}'
+2018/04/17 10:48:41 autoutil(17f0) I:     default              ='{89bc9aa2-fff5-11e6-a910-89b898ff3525}'
+2018/04/17 10:48:41 autoutil(17f0) I:     bootsequence         =''
+2018/04/17 10:48:41 autoutil(17f0) I:     resume               =''
+2018/04/17 10:48:41 autoutil(17f0) I:     resumeobject         ='{89bc9aa1-fff5-11e6-a910-89b898ff3525}'
+2018/04/17 10:48:41 autoutil(17f0) I:     timeout              ='0'
+2018/04/17 10:48:41 autoutil(17f0) I:     displaybootmenu      =''
+2018/04/17 10:48:41 autoutil(17f0) I:     displayorder[0]      ='{89bc9aa2-fff5-11e6-a910-89b898ff3525}'
+2018/04/17 10:48:41 autoutil(17f0) I:     displayorder[1]      ='{e217309d-dead-beef-a315-001372be0d01}'
+2018/04/17 10:48:41 autoutil(17f0) I:     toolsdisplayorder[0] ='{b2721d73-1db4-4c62-bf78-c548a880142d}'
+2018/04/17 10:48:41 autoutil(17f0) I:    End bcd::GetBootManagerObjects found 1 objects
+2018/04/17 10:48:41 autoutil(17f0) I:  End bcd::GetBootManagerObject - returning 1
+2018/04/17 10:48:41 autoutil(17f0) I: -IsNextBootAuto - find automation ('{e217309d-dead-beef-a315-001372be0d01}') in bootsquence ('') = -1
+2018/04/17 10:48:41 autoutil(17f0) I: End CClient::IsNextBootAuto returning false
+2018/04/17 10:48:41 autoutil(17f0) I: Begin CClient::IsNextBootProd () called
+2018/04/17 10:48:41 autoutil(17f0) I: Begin CClient::IsInstalled (bForce=0)
+2018/04/17 10:48:41 autoutil(17f0) I: End CClient::IsInstalled - returning true
+2018/04/17 10:48:41 autoutil(17f0) I:  Begin bcd::GetBootManagerObject (item)
+2018/04/17 10:48:41 autoutil(17f0) I:    Begin bcd::GetBootManagerObjects (v)
+2018/04/17 10:48:41 autoutil(17f0) D:           CreateChildProcess - CreateProcess (sFile='C:\boot\altiris\iso\bcdedit.exe', sParam=' /enum {bootmgr} /v') succeeded with exitcode 0, returning true
+2018/04/17 10:48:41 autoutil(17f0) D:         RunCommandRedirectToBuffer output:
+
+Windows Boot Manager
+--------------------
+identifier              {9dea862c-5cdd-4e70-acc1-f32b344d4795}
+device                  partition=\Device\HarddiskVolume1
+description             Windows Boot Manager
+locale                  ja-JP
+inherit                 {7ea2e1ac-2e61-4728-aaa3-896d9d0a9f0e}
+default                 {89bc9aa2-fff5-11e6-a910-89b898ff3525}
+resumeobject            {89bc9aa1-fff5-11e6-a910-89b898ff3525}
+displayorder            {89bc9aa2-fff5-11e6-a910-89b898ff3525}
+                        {e217309d-dead-beef-a315-001372be0d01}
+toolsdisplayorder       {b2721d73-1db4-4c62-bf78-c548a880142d}
+timeout                 0
+
+
+2018/04/17 10:48:41 autoutil(17f0) D:         RunCommandRedirectToBuffer - CreateChildProcess (sFile='C:\boot\altiris\iso\bcdedit.exe', sParam=' /enum {bootmgr} /v') succeeded with exitcode=0, returning TRUE
+2018/04/17 10:48:41 autoutil(17f0) I:  -GetBootManagerObjects - Windows boot manager[1]:
+2018/04/17 10:48:41 autoutil(17f0) I:     identifier           ='{9dea862c-5cdd-4e70-acc1-f32b344d4795}'
+2018/04/17 10:48:41 autoutil(17f0) I:     description          ='windows boot manager'
+2018/04/17 10:48:41 autoutil(17f0) I:     device               ='partition=\\harddiskvolume1'
+2018/04/17 10:48:41 autoutil(17f0) I:     path                 =''
+2018/04/17 10:48:41 autoutil(17f0) I:     locale               ='ja-jp'
+2018/04/17 10:48:41 autoutil(17f0) I:     inherit              ='{7ea2e1ac-2e61-4728-aaa3-896d9d0a9f0e}'
+2018/04/17 10:48:41 autoutil(17f0) I:     default              ='{89bc9aa2-fff5-11e6-a910-89b898ff3525}'
+2018/04/17 10:48:41 autoutil(17f0) I:     bootsequence         =''
+2018/04/17 10:48:41 autoutil(17f0) I:     resume               =''
+2018/04/17 10:48:41 autoutil(17f0) I:     resumeobject         ='{89bc9aa1-fff5-11e6-a910-89b898ff3525}'
+2018/04/17 10:48:41 autoutil(17f0) I:     timeout              ='0'
+2018/04/17 10:48:41 autoutil(17f0) I:     displaybootmenu      =''
+2018/04/17 10:48:41 autoutil(17f0) I:     displayorder[0]      ='{89bc9aa2-fff5-11e6-a910-89b898ff3525}'
+2018/04/17 10:48:41 autoutil(17f0) I:     displayorder[1]      ='{e217309d-dead-beef-a315-001372be0d01}'
+2018/04/17 10:48:41 autoutil(17f0) I:     toolsdisplayorder[0] ='{b2721d73-1db4-4c62-bf78-c548a880142d}'
+2018/04/17 10:48:41 autoutil(17f0) I:    End bcd::GetBootManagerObjects found 1 objects
+2018/04/17 10:48:41 autoutil(17f0) I:  End bcd::GetBootManagerObject - returning 1
+2018/04/17 10:48:41 autoutil(17f0) I: -IsNextBootProd - find automation ('{e217309d-dead-beef-a315-001372be0d01}') in bootsquence ('') = -1
+2018/04/17 10:48:41 autoutil(17f0) I: End CClient::IsNextBootProd returning true
+2018/04/17 10:48:41 autoutil(17f0) D: CClientWin7 destructor called
+2018/04/17 10:48:41 autoutil(17f0) D: CClientBootMgr destructor called
+2018/04/17 10:48:41 autoutil(17f0) D: CClient destructor called
+
+2018/04/17 10:48:41 autoutil(17f0) I: AUTOUTIL is returning 4 (EXIT_QUERY_BOOT_PRODUCTION)
+
+2018/04/17 10:48:41 autoutil(17f0) I: Ending application instance
+2018/04/17 10:48:41 autoutil(17f0) I:     Exit code: 4 (EXIT_QUERY_BOOT_PRODUCTION)
+2018/04/17 10:48:41 autoutil(17f0) I: ****************************************
+2018/04/17 10:48:41 autoutil(17f0) I:    Application End
+2018/04/17 10:48:41 autoutil(17f0) I: ****************************************
+
+
